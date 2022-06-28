@@ -2,9 +2,9 @@ import React from "react";
 import Task from "./Task"
 
 function TaskList({ tasks, handleDelete }) {
-  const taskArray = tasks.map((task, index) => {
+  const taskArray = tasks.map((task) => {
      return <Task 
-     key={index}
+     key={task.text}
      text={task.text}
      category={task.category}
      handleDelete={handleDelete}/>

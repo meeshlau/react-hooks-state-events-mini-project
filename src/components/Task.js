@@ -6,8 +6,6 @@ function Task({ text, category, handleDelete }) {
   const handleClick = () => {
     handleDelete(text)
   }
-    
-
 
   return (
     <div className="task">
